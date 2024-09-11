@@ -5,12 +5,112 @@
     <meta charset="UTF-8">
     <title>Personal Website</title>
     <link rel="stylesheet" href="./assets/styles.css">
+
+    <!--Display social icons-->
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>
     <!--Paste Fonts Here-->
 
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+    <main>
+        <!--Sidebar-->
+        <aside class="sidebar active" data-sidebar>
+            <div class="sidebar-info">
+                <figure class="profile-pic">
+                    <img src="#" alt="Teh Li Peh">
+                </figure>
+                <div class="my-info">
+                    <h1 class="name" title="Teh Li Peh">Teh Li Peh</h1>
+                    <p class="my-title">Software Engineer</p>
+                </div>
+                
+                <button class="more-info-btn">
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+
+            </div>
+            <div class="sidebar-more-info">
+                <div class="seperator"></div>
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:tehlipeh@gmail.com" class="contact-link">tehlipeh@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+                            <a href="tel:+9802503887" class="contact-link">980-250-3887</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <address>Charlotte, NC</address>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="seperator">
+                    <ul class="social-icons">
+                        <li class="social-item">
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li class="social-item">
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li class="social-item">
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!--Main Content-->
+        <!--NavBar-->
+        <div class="main-content">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <button class="nav-link active" data-nav-link>About</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link active" data-nav-link>Resume</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link active" data-nav-link>Portfolio</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link active" data-nav-link>Contact</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
 </body>
 
 </html>
