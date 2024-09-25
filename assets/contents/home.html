@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="/my_website/assets/styles/public.css">
+    <link rel="stylesheet" href="/my_website/assets/styles/sidebar.css">
+    <link rel="stylesheet" href="/my_website/assets/styles/navbar.css">
+    <link rel="stylesheet" href="/my_website/assets/styles/home.css">
+
+    <!--Display social icons-->
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>
+    <!--Paste Fonts Here-->
+
+</head>
+
+<body>
+    <main>
+        <div data-include="aside.html"></div>
+        <div class="main-content">
+            <div data-include="navbar.html"></div>
+            <article class="about active" data-page="about">
+                <header>
+                  <h2 class="h2 article-title">About me</h2>
+                </header>
+    
+                <section class="about-text">
+                  <p>
+                    I am a recent Computer Science graduate at UNC Charlotte with a passion for software engineering and game development. I have hands-on experience with full-stack development in VS Code and enjoy creating interactive experiences in Unity. In my free time, I explore digital art using Procreate, blending creativity with technology.
+                  </p>
+                </section>
+    
+                <!--service-->
+                <section class="service">
+                  <h3 class="h3 service-title">What i'm doing</h3>
+    
+                  <ul class="service-list">
+    
+                    <li class="service-item">
+                      <div class="service-icon-box">
+                        <img src="./assets/images/icon-design.svg
+                        " alt="design icon" width="40">
+                      </div>
+    
+                      <div class="service-content-box">
+                        <h4 class="h4 service-item-title">Web Development</h4>
+                        <p class="service-item-text">
+                          Frontend and Backend Development
+                        </p>
+                      </div>
+                    </li>
+    
+                    <li class="service-item">
+    
+                      <div class="service-icon-box">
+                        <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                      </div>
+    
+                      <div class="service-content-box">
+                        <h4 class="h4 service-item-title">Game Development</h4>
+                        <p class="service-item-text">
+                          Develop 2D and 3D games using C# in Unity
+                        </p>
+                      </div>
+                    </li>
+    
+                    <li class="service-item">
+                      <div class="service-icon-box">
+                        <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                      </div>
+                      <div class="service-content-box">
+                        <h4 class="h4 service-item-title">Digital Art</h4>
+                        <p class="service-item-text">
+                          Enjoy painting and animating in Procreate
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </section>
+            </article>
+        </div>
+    </main>
+
+
+    <!--Scripts-->
+    <script src="/my_website/assets/javascripts/script.js"></script>
+    <script src="/my_website/assets/javascripts/include.js"></script>
+</body>
+
+</html>
