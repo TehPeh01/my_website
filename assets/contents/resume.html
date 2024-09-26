@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Personal Website</title>
+    <!--Styles-->
     <link rel="stylesheet" href="/my_website/assets/styles/public.css">
     <link rel="stylesheet" href="/my_website/assets/styles/sidebar.css">
     <link rel="stylesheet" href="/my_website/assets/styles/navbar.css">
+    <link rel="stylesheet" href="/my_website/assets/styles/resume.css">
 
     <!--Display social icons-->
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
@@ -20,7 +22,147 @@
         <div data-include="aside.html"></div>
         <div class="main-content">
             <div data-include="navbar.html"></div>
-            
+            <article class="resume" data-page="resume">
+                <header>
+                  <h2 class="h2 article-title">Resume</h2>
+                </header>
+        
+                <section class="timeline">
+        
+                  <div class="title-wrapper">
+                    <div class="icon-box">
+                      <ion-icon name="book-outline"></ion-icon>
+                    </div> 
+                    <h3 class="h3">Education</h3>
+                  </div>
+        
+                  <ol class="timeline-list">  
+                    <li class="timeline-item">  
+                      <h4 class="h4 timeline-item-title">University of North Carolina at Charlotte</h4>  
+                      <span>August 2020 — May 2024</span> 
+                      <p class="timeline-text">
+                        Computer Science Bachelor of Science
+                      </p>
+                      <p class="timeline-text">
+                        Concentration: Gaming, AI, and Robotics
+                      </p>
+                    </li>
+                  </ol>
+                </section>
+        
+                <section class="timeline">
+        
+                  <div class="title-wrapper">
+                    <div class="icon-box">
+                      <ion-icon name="book-outline"></ion-icon>
+                    </div> 
+                    <h3 class="h3">Experience</h3>
+                  </div>
+        
+                  <ol class="timeline-list">  
+                    <li class="timeline-item">  
+                      <h4 class="h4 timeline-item-title">Road to Hire Hackathon</h4>  
+                      <span>July 2023 — July 2023</span> 
+                      <p class="timeline-text">
+                        Developed a full-stack web application using HTML/CSS in VS Code. 
+                      </p>
+                      <p class="timeline-text">
+                        Showcased the final product to diverse audiences, effectively communicating its features and functionalities.
+                      </p> 
+                    </li>
+        
+                    <li class="timeline-item"> 
+                      <h4 class="h4 timeline-item-title">Road to Hire Intern Prep Program</h4>  
+                      <span>July 2023 — August 2023</span>  
+                      <p class="timeline-text">
+                        Job shadowed with a senior project manager in technology, gaining valuable insights into project management
+                        strategies. 
+                      </p> 
+                      <p class="timeline-text">
+                        Immersed in the analysis and resolution of real-world corporate scenarios, honing problem-solving abilities and
+                        practical knowledge.
+                      </p>  
+                    </li>
+        
+                    <li class="timeline-item"> 
+                      <h4 class="h4 timeline-item-title">Pathways Summer Internship at RedVentures</h4>  
+                      <span>June 2019 — August 2019</span>  
+                      <p class="timeline-text">
+                        Developed the skills to build a functioning web application using HTML/CSS and JavaScript in VS Code
+                      </p> 
+                    </li> 
+                  </ol>  
+                </section>
+        
+                <section class="skill">  
+                  <h3 class="h3 skills-title">My skills</h3>  
+                  <ul class="skills-list content-card">  
+                    <li class="skills-item">  
+                      <div class="title-wrapper">
+                        <h5 class="h5">Web Development</h5>
+                        <data value="80">50%</data>
+                      </div>
+        
+                      <div class="skill-progress-bg">
+                        <div class="skill-progress-fill" style="width: 50%;"></div>
+                      </div>  
+                    </li>
+        
+                    <li class="skills-item">  
+                      <div class="title-wrapper">
+                        <h5 class="h5">Game Development</h5>
+                        <data value="90">50%</data>
+                      </div>
+        
+                      <div class="skill-progress-bg">
+                        <div class="skill-progress-fill" style="width: 50%;"></div>
+                      </div>  
+                    </li>
+        
+                    <li class="skills-item"> 
+                      <div class="title-wrapper">
+                        <h5 class="h5">Digital Art</h5>
+                        <data value="50">50%</data>
+                      </div>
+        
+                      <div class="skill-progress-bg">
+                        <div class="skill-progress-fill" style="width: 50%;"></div>
+                      </div> 
+                    </li>  
+                  </ul>
+                </section>  
+
+                <button class="resume-btn" type="submit">
+                    <ion-icon name="paper-plane"></ion-icon>
+                    <span>View Projects</span>
+                </button>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                      <div class="icon-box">
+                        <ion-icon name="book-outline"></ion-icon>
+                      </div>
+                        <h3 class="h3">Other Experience</h3>
+                    </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Auntie Anne's</h4>
+                            <span>October 2023 — Present</span>  
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Walmart</h4>
+                            <span>November 2020 — August 2021</span>  
+                        </li>
+                    </ol>
+                </section>
+
+                <button class="resume-btn" type="submit">
+                    <ion-icon name="paper-plane"></ion-icon>
+                    <span>Download PDF</span>
+                </button>
+
+            </article>
         </div>
     </main>
 

@@ -1,5 +1,5 @@
 .sidebar {
-    border: 1px solid blue;
+
     border-radius: 20px;
     padding: 15px;
     z-index: 1;
@@ -75,10 +75,8 @@
 }
   
 .sidebar-info_more {
-    /*
     opacity: 0;
     visibility: hidden;
-    */
 }
 
 .sidebar.active .sidebar-info_more {
@@ -155,6 +153,20 @@
     inset: 1px;
     border-radius: inherit;
     z-index: -1;
+}
+
+@media (min-width: 580px) {
+    .sidebar {
+        max-height: 180px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .contacts-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 15px;
+    }
 }
 
 @media (min-width: 1250px) {

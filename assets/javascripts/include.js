@@ -1,5 +1,7 @@
+//display Sidebar and Nav since they are seperate files 
 document.addEventListener("DOMContentLoaded", function() {
     const elements = document.querySelectorAll('[data-include]');
+    let filesToLoad = elements.length;
     
     elements.forEach(el => {
         const file = el.getAttribute('data-include');
@@ -15,6 +17,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 })
                 .then(data => {
                     el.innerHTML = data;
+                    filesToLoad--;
+
+                    if (filesToLoad === 0) {
+                        document.dispatchEvent(new CustomEvent('includesLoaded'));
+                    }
                 })
                 .catch(err => {
                     el.innerHTML = '<p>Error loading content.</p>';
@@ -23,3 +30,4 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+

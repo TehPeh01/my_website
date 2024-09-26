@@ -24,11 +24,11 @@
 
 .navbar-link:hover,
 .navbar-link:focus { 
-  color: gray; 
+    color: gray; 
 }
 
 .navbar-link.active { 
-  color: blue; 
+    color: blue; 
 }
 
 @media (min-width: 580px) {

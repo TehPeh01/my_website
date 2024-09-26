@@ -1,0 +1,215 @@
+.article-title { 
+    margin-bottom: 30px; 
+}
+
+.timeline { 
+    margin-top: 30px;
+    margin-bottom: 30px; 
+}
+  
+.timeline .title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+  
+.timeline-list {
+    font-size: var(--fs-6);
+    margin-left: 45px;
+}
+  
+.timeline-item { 
+    position: relative; 
+}
+  
+.timeline-item:not(:last-child) { 
+    margin-bottom: 20px; 
+}
+  
+.timeline-item-title {
+    font-size: var(--fs-6);
+    line-height: 1.3;
+    margin-bottom: 7px;
+}
+  
+.timeline-list span {
+    color: black;
+    line-height: 1.6;
+}
+  
+.timeline-item:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -30px;
+    width: 1px;
+    height: calc(100% + 50px);
+    background: red;
+}
+  
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -33px;
+    height: 6px;
+    width: 6px;
+    background: blue;
+    border-radius: 50%;
+    box-shadow: black;
+}
+  
+.timeline-text {
+    color: black;
+    line-height: 1.6;
+}
+  
+  
+/*skills*/
+.skill {
+    margin-bottom: 30px;
+}
+
+.content-card {
+    position: relative;
+    border: 1px solid red;
+    padding: 15px;
+    padding-top: 45px;
+    border-radius: 14px;
+    z-index: 1;
+}
+  
+.content-card::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.skills-title { 
+    margin-bottom: 20px; 
+}
+  
+.skills-list { 
+    padding: 20px; 
+}
+  
+.skills-item:not(:last-child) { 
+    margin-bottom: 15px; 
+}
+  
+.skill .title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+  
+.skill .title-wrapper data {
+    color: var(--light-gray);
+    font-size: var(--fs-7);
+    font-weight: var(--fw-300);
+}
+  
+.skill-progress-bg {
+    background: blue;
+    width: 100%;
+    height: 8px;
+    border-radius: 10px;
+}
+  
+.skill-progress-fill {
+    background: red;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.resume-btn {
+    position: relative;
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 20px;
+    border-radius: 14px;
+    text-transform: capitalize;
+    z-index: 1;
+}
+
+.resume-btn::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.resume-btn ion-icon { 
+    font-size: 16px; 
+}
+
+@media (min-width: 520px) {
+    .timeline-list { 
+        margin-left: 65px; 
+    }
+    
+    .timeline-item:not(:last-child)::before { 
+        left: -50px; 
+    }
+    
+    .timeline-item::after {
+        height: 8px;
+        width: 8px;
+        left: -53px;
+    }
+    
+    .skills-item:not(:last-child) { 
+        margin-bottom: 25px; 
+    }
+}
+
+@media (min-width: 580px) {
+    .timeline-list { 
+        margin-left: 65px; 
+    }
+    
+    .timeline-item:not(:last-child)::before { 
+        left: -50px; 
+    }
+    
+    .timeline-item::after {
+        height: 8px;
+        width: 8px;
+        left: -53px;
+    }
+    
+    .skills-item:not(:last-child) { 
+        margin-bottom: 25px; 
+    }
+
+    .resume-btn {
+        --fs-6: 16px;
+        padding: 16px 20px;
+    }
+    
+    .resume-btn ion-icon { 
+        font-size: 18px; 
+    }
+}
+
+@media (min-width: 768px) {
+    .resume-btn {
+        width: max-content;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1250px) {
+    .timeline-text { 
+        max-width: 700px; 
+    }
+}

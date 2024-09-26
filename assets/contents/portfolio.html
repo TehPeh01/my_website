@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/my_website/assets/styles/public.css">
     <link rel="stylesheet" href="/my_website/assets/styles/sidebar.css">
     <link rel="stylesheet" href="/my_website/assets/styles/navbar.css">
+    <link rel="stylesheet" href="/my_website/assets/styles/portfolio.css">
 
     <!--Display social icons-->
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
@@ -20,6 +21,113 @@
         <div data-include="aside.html"></div>
         <div class="main-content">
             <div data-include="navbar.html"></div>
+            <article class="portfolio" data-page="portfolio">
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+        
+                <section class="projects">   
+                    <ul class="filter-list">   
+                        <li class="filter-item">
+                            <button class="active" data-filter-btn>All</button>
+                        </li>
+            
+                        <li class="filter-item">
+                            <button data-filter-btn>Web Development</button>
+                        </li>
+            
+                        <li class="filter-item">
+                            <button data-filter-btn>Game Development</button>
+                        </li>
+            
+                        <li class="filter-item">
+                            <button data-filter-btn>Digital Art</button>
+                        </li>    
+                    </ul>
+            
+                    <div class="filter-select-box">    
+                        <button class="filter-select" data-select>    
+                            <div class="select-value" data-selecct-value>Select category</div>
+                
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>    
+                        </button>
+            
+                        <ul class="select-list">    
+                            <li class="select-item">
+                                <button data-select-item>All</button>
+                            </li>
+                
+                            <li class="select-item">
+                                <button data-select-item>Web Development</button>
+                            </li>
+                
+                            <li class="select-item">
+                                <button data-select-item>Game Development</button>
+                            </li>
+                
+                            <li class="select-item">
+                                <button data-select-item>Digital Art</button>
+                            </li>    
+                        </ul>   
+                    </div>
+            
+                    <ul class="project-list">    
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="#">
+                              <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+              
+                                <img src="./assets/images/project-1.jpg" alt="web dev" loading="lazy">
+                              </figure>
+              
+                              <h3 class="project-title">Web Dev</h3>
+              
+                              <p class="project-category">Web development</p>
+              
+                            </a>
+                        </li>
+            
+                        <li class="project-item active" data-filter-item data-category="game development">
+                            <a href="#">
+                              <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+              
+                                <img src="./assets/images/project-1.jpg" alt="game dev" loading="lazy">
+                              </figure>
+              
+                              <h3 class="project-title">Game Dev</h3>
+              
+                              <p class="project-category">Game development</p>
+              
+                            </a>
+                        </li>
+            
+                        <li class="project-item active" data-filter-item data-category="digital art">
+                            <a href="#">
+                              <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+              
+                                <img src="./assets/images/project-1.jpg" alt="art" loading="lazy">
+                              </figure>
+              
+                              <h3 class="project-title">Art</h3>
+              
+                              <p class="project-category">Digital Art</p>
+              
+                            </a>
+                        </li>
+
+                    </ul>    
+                </section>    
+            </article>
         </div>
     </main>
 
