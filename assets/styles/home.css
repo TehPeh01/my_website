@@ -3,37 +3,38 @@
 }
   
 .about-text {
-    line-height: 1.6;
+    line-height: 1.5;
+    font-size: 1rem;
 }
   
 .about-text p { 
     margin-bottom: 15px; 
+    color: black;
 }
 
 .service { 
     margin-bottom: 35px; 
 }
   
-  .service-title { 
+.service-title { 
     margin-bottom: 20px; 
 }
   
-  .service-list {
+.service-list {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
 }
   
 .service-item {
-    border: 1px solid red;
+    border: 1px solid black;
     position: relative;
     padding: 20px;
-    border-radius: 14px;
+    border-radius: 10px;
     z-index: 1;
 }
   
 .service-item::before {
-    content: "";
     position: absolute;
     inset: 1px;
     border-radius: inherit;

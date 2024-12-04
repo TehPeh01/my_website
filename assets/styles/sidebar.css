@@ -1,6 +1,5 @@
 .sidebar {
-
-    border-radius: 20px;
+    /*border-radius: 20px;*/
     padding: 15px;
     z-index: 1;
 
@@ -19,24 +18,27 @@
     justify-content: flex-start;
     align-items: center;
     gap: 15px;
+    
 }
 
 .avatar-box {
-    border: 1px solid red;
-    border-radius: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
 }
 
 .avatar-img {
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .info-content .name {
+    color: white;
     font-size: 1rem;
     letter-spacing: -0.25px;
     margin-bottom: 10px;
 }
 
 .info-content .title {
+    color: white;
     width: max-content;
     padding: 3px 12px;
     border-radius: 8px;
@@ -62,12 +64,12 @@
   
 .info_more-btn:hover,
 .info_more-btn:focus { 
-    background: red; 
+    background: blue; 
 }
   
 .info_more-btn:hover::before,
 .info_more-btn:focus::before { 
-    background: yellow; 
+    background: blue; 
 }
   
 .info_more-btn span { 
@@ -103,13 +105,13 @@
 }
   
 .contact-title {
-    color: var(--light-gray-70);
+    color: black;
     font-size: var(--fs-8);
     margin-bottom: 2px;
 }
   
 .contact-info :is(.contact-link, address) {
-    color: red;
+    color: black;
     font-size: 1rem;
 }
   
@@ -136,6 +138,7 @@
 }
 
 .icon-box {
+    color: black;
     position: relative;
     width: 30px;
     height: 30px;
@@ -171,11 +174,12 @@
 
 @media (min-width: 1250px) {
     .sidebar {
-        border: 1px solid red;
+        border: 1px solid #1C6E8C;
         position: sticky;
-        top: 60px;
+        /*top: 60px;*/
         max-height: max-content;
         height: 100%;
+
         margin-bottom: 0;
         padding-top: 60px;
         z-index: 1;

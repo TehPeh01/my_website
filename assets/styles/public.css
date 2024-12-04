@@ -10,12 +10,14 @@
 
 html {
     overflow-y: scroll;
+    background-color: #fffff6;
 }
 
 main {
     margin: 15px 12px;
     margin-bottom: 75px;
     min-width: 259px;
+    /*background-color: #64FFDA;*/
 }
 
 a {
@@ -30,12 +32,13 @@ li {
 .h3,
 .h4,
 .h5 {
-    color: black;
+    color: #040F16;
     text-transform: capitalize;
 }
   
 .h2 { 
-    font-size: 2rem; 
+    color: #1c6e8c;
+    font-size: 2.5rem; 
 }
   
 .h3 { 
@@ -56,8 +59,9 @@ img, ion-icon, a, button, span {
 
 .sidebar,
 article {
-    border: 1px solid red;
-    border-radius: 20px;
+    /*background-color: red;*/
+    border: 1px solid #1C6E8C;
+    /*border-radius: 20px;*/
     padding: 15px;
     z-index: 1;
 }
@@ -95,7 +99,7 @@ input, textarea {
 
 .icon-box {
     position: relative;
-    border: 1px solid blue;
+    border: 1px solid black;
     width: 30px;
     height: 30px;
     border-radius: 8px;
@@ -158,8 +162,8 @@ input, textarea {
     }
 
     main { 
-        border: 1px solid red;
-        margin-bottom: 60px; 
+
+        /*margin-bottom: 60px; */
     }
     
     .main-content {
@@ -172,6 +176,7 @@ input, textarea {
 @media (min-width: 1250px) {
     .sidebar, article {
         width: auto;
+        background-color: #fffff6;
     }
 
     article {
@@ -179,7 +184,8 @@ input, textarea {
     }
     
     main {
-        max-width: 1200px;
+        /*max-width: 1200px;*/
+        margin: 1px;
         margin-inline: auto;
         display: flex;
         justify-content: center;
